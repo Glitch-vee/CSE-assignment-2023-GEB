@@ -126,6 +126,7 @@ create a new string by shifting one position to left.
 
 **0.0.11** <br>Write a Python program that accepts a string and two letters from user. Your
 program should create a new string by replacing one letter with other.
+
 **Input:** HELLO L P
 
 **Output:** HEPPO
