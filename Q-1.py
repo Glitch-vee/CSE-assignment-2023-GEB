@@ -1,7 +1,6 @@
-n=int(input("Enter the number of the row= ")
-
-for i in range(n): 
-    for j in range (i, n):
-        print("*", end=" ")
-    print()
-    
+#1 
+try:
+ x=int(input("Enter number= ")) 
+ print(bin(x)[2:],oct(x)[2:],hex(x)[2:], sep='\n')
+except: 
+ print("thats not an integer")
