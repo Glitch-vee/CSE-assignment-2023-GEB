@@ -1,11 +1,19 @@
-#Write a program that asks the user for a positive integer value. The program should calculate the sum of all the integers from 1 up to the number entered. For example, if the user enters 20, the loop will find the sum of 1, 2, 3, 4, … 20.
-#Input: 20 Output: 210
+#7
+class SumOfDigits:
+    def __init__(self, number):
+        self.number = number
 
+    def sum_of_digits(self):
+        digit_list = [int(d) for d in str(self.number)]
+        return sum(digit_list)
 
-r = int(input("input the number range= "))
+def main():
+    number = int(input())
+    if number > 0:
+        obj = SumOfDigits(number)
+        print(obj.sum_of_digits())
+    else:
+        print("Invalid input. Please enter a positive integer.")
 
-x=0
-
-for i in range(1,r+1):
-    x+=i
-print("the sum of the numbers from 1 to ", r, 'is', x)   
+if __name__ == "__main__":
+    main()
