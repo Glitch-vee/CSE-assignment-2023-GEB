@@ -1,3 +1,4 @@
-user_input = input("Please enter a string: ")
-new_string = user_input[-1] + user_input[1:-1] + user_input[0]
-print("The new string is:", new_string)
+#10
+original_string = input()
+new_string = original_string[1:] + original_string[0]
+print(new_string)
